@@ -17,18 +17,17 @@
 
 ## 📸 Screenshot
 
-<table>
-  <tr>
-    <td align="center"><b>🌙 Dark Mode</b></td>
-    <td align="center"><b>☀️ Light Mode</b></td>
-    <td align="center"><b>➕ Form Tambah</b></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/home_dark.png" alt="Home Dark Mode" width="100%"/></td>
-    <td><img src="screenshots/home_light.png" alt="Home Light Mode" width="100%"/></td>
-    <td><img src="screenshots/form_page.png" alt="Form Tambah Mobil" width="100%"/></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6cf32ea7-2880-4d3c-9f46-26e54811a2b4" width="100%" alt="Home Dark Mode"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/56905771-69e7-4e12-a469-7dd61a0e1ed2" width="100%" alt="Home Light Mode"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4ce3ead1-409a-476b-b615-d53802a7c4f9" width="100%" alt="Form Tambah Mobil"/>
+</p> 
 
 ---
 
