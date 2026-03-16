@@ -9,13 +9,26 @@
 
 ---
 
-
-
----
-
 ## 📖 Deskripsi Aplikasi
 
 **Tuning Car Rental** adalah aplikasi manajemen armada kendaraan untuk bisnis rental mobil. Pengguna dapat mendaftarkan akun, login, lalu mengelola data mobil (tambah, lihat, edit, hapus) secara real-time melalui database Supabase. Setiap pengguna hanya dapat melihat dan mengelola data miliknya sendiri.
+
+---
+
+## 📸 Screenshot
+
+<table>
+  <tr>
+    <td align="center"><b>🌙 Dark Mode</b></td>
+    <td align="center"><b>☀️ Light Mode</b></td>
+    <td align="center"><b>➕ Form Tambah</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/home_dark.png" alt="Home Dark Mode" width="100%"/></td>
+    <td><img src="screenshots/home_light.png" alt="Home Light Mode" width="100%"/></td>
+    <td><img src="screenshots/form_page.png" alt="Form Tambah Mobil" width="100%"/></td>
+  </tr>
+</table>
 
 ---
 
@@ -30,6 +43,7 @@
 | 🗑️ **Hapus Mobil** | Konfirmasi dialog sebelum menghapus |
 | 📷 **Upload Foto** | Gambar tersimpan di Supabase Storage (web-compatible) |
 | 🌙 **Dark & Light Mode** | Toggle tema langsung dari halaman utama |
+| 🔔 **Snackbar Notifikasi** | Notifikasi berhasil saat create, update, dan delete |
 | 🔒 **Row Level Security** | Setiap user hanya akses data miliknya |
 | 🌐 **Cross-Platform** | Berjalan di Web, Android, dan iOS |
 
@@ -66,7 +80,7 @@
 
 ### Dialog & Feedback
 - `Dialog` custom — konfirmasi hapus
-- `SnackBar` — notifikasi sukses/error
+- `SnackBar` — notifikasi sukses/error untuk create, update, delete
 - `HapticFeedback` — respons sentuhan
 
 ### State & Stream
@@ -138,7 +152,7 @@ SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_ANON_KEY=your-anon-key-here
 ```
 
-> ⚠️ File `.env` sudah ada di `.gitignore` — **jangan di-commit ke GitHub**. Kirim URL dan API Key lewat komentar pribadi.
+> ⚠️ File `.env` sudah ada di `.gitignore` — **jangan di-commit ke GitHub**.
 
 ### 5. Jalankan Aplikasi
 
@@ -181,15 +195,6 @@ Table: cars
 ```
 
 Row Level Security aktif — setiap user hanya bisa akses data miliknya sendiri.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Persistensi tema (simpan preferensi dark/light)
-- [ ] Halaman detail mobil
-- [ ] Sistem booking & kalender ketersediaan
-- [ ] Export laporan ke PDF
 
 ---
 
