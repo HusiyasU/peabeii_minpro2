@@ -18,6 +18,14 @@
 ## 📸 Screenshot
 
 <p align="center">
+  <img src="https://github.com/user-attachments/assets/066a8ea1-71a0-4c98-81af-e30f569f5240" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ab1130eb-47a7-4830-9b05-cc03468ec59f" width="100%" />
+</p>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/6cf32ea7-2880-4d3c-9f46-26e54811a2b4" width="100%" alt="Home Dark Mode"/>
 </p>
 
