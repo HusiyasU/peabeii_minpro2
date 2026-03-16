@@ -36,8 +36,39 @@ class _HomePageState extends State<HomePage>
     }
   }
 
+  void _showSnack(String msg, {bool success = true}) {
+    if (!mounted) return;
+    final c = context.c;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Row(
+          children: [
+            Icon(
+              success ? Icons.check_circle_rounded : Icons.error_rounded,
+              color: Colors.white, size: 18,
+            ),
+            const SizedBox(width: 10),
+            Expanded(child: Text(msg,
+              style: GoogleFonts.rajdhani(
+                fontWeight: FontWeight.w600, fontSize: 14,
+              ),
+            )),
+          ],
+        ),
+        backgroundColor: success
+            ? c.neon.withOpacity(.9)
+            : c.accent.withOpacity(.9),
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        margin: const EdgeInsets.all(16),
+        duration: const Duration(seconds: 2),
+      ),
+    );
+  }
+
   void _openForm({Car? car}) async {
     HapticFeedback.lightImpact();
+    final isEdit = car != null;
     final result = await Navigator.push<bool>(
       context,
       PageRouteBuilder(
@@ -51,7 +82,12 @@ class _HomePageState extends State<HomePage>
         transitionDuration: const Duration(milliseconds: 350),
       ),
     );
-    if (result == true) _fetchCars();
+    if (result == true) {
+      _fetchCars();
+      _showSnack(isEdit
+          ? 'Data mobil berhasil diperbarui!'
+          : 'Mobil baru berhasil ditambahkan!');
+    }
   }
 
   void _confirmDelete(Car car) {
@@ -71,15 +107,9 @@ class _HomePageState extends State<HomePage>
     try {
       await SupabaseService.deleteCar(car.id!);
       _fetchCars();
+      _showSnack('Mobil "${car.name}" berhasil dihapus!');
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Gagal menghapus: $e'),
-            backgroundColor: context.c.accent,
-          ),
-        );
-      }
+      if (mounted) _showSnack('Gagal menghapus: $e', success: false);
     }
   }
 
@@ -760,7 +790,7 @@ class _DeleteDialog extends StatelessWidget {
               color: c.textPri, letterSpacing: 1.5,
             )),
             const SizedBox(height: 8),
-            Text('Hapus "$carName" dari armada?',
+            Text('Hapus "${carName}" dari armada?',
               textAlign: TextAlign.center,
               style: GoogleFonts.rajdhani(fontSize: 14, color: c.textSec),
             ),
