@@ -197,16 +197,6 @@ Row Level Security aktif — setiap user hanya bisa akses data miliknya sendiri.
 
 ---
 
-## 🗺️ Roadmap
-
-- [ ] Persistensi tema (simpan preferensi dark/light)
-- [ ] Fitur search & filter armada
-- [ ] Halaman detail mobil
-- [ ] Sistem booking & kalender ketersediaan
-- [ ] Export laporan ke PDF
-
----
-
 <div align="center">
   Dibuat dengan ❤️ menggunakan Flutter & Supabase
 </div>
