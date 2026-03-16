@@ -9,10 +9,10 @@ import 'pages/home_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Load .env
+  // Load env when app mulai 
   await dotenv.load(fileName: '.env');
 
-  // Init Supabase
+  // Init Supabase 
   await Supabase.initialize(
     url:     dotenv.env['SUPABASE_URL']!,
     anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
@@ -31,7 +31,7 @@ void main() async {
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
-  // Akses ThemeMode dari mana saja
+  // Akses ThemeMode dari mana saja 
   static _MyAppState? _instance;
   static void toggleTheme() => _instance?._toggleTheme();
   static ThemeMode get themeMode => _instance?._themeMode ?? ThemeMode.dark;
