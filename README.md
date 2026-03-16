@@ -24,9 +24,9 @@
     <td align="center"><b>➕ Form Tambah</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/home_dark.png" alt="Home Dark Mode" width="100%"/></td>
-    <td><img src="screenshots/home_light.png" alt="Home Light Mode" width="100%"/></td>
-    <td><img src="screenshots/form_page.png" alt="Form Tambah Mobil" width="100%"/></td>
+    <td><img src="" alt="Home Dark Mode" width="100%"/></td>
+    <td><img src="" alt="Home Light Mode" width="100%"/></td>
+    <td><img src="" alt="Form Tambah Mobil" width="100%"/></td>
   </tr>
 </table>
 
