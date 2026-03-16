@@ -15,6 +15,22 @@
 
 ---
 
+## 📸 Screenshot
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6cf32ea7-2880-4d3c-9f46-26e54811a2b4" width="100%" alt="Home Dark Mode"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/56905771-69e7-4e12-a469-7dd61a0e1ed2" width="100%" alt="Home Light Mode"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4ce3ead1-409a-476b-b615-d53802a7c4f9" width="100%" alt="Form Tambah Mobil"/>
+</p> 
+
+---
+
 ## ✨ Fitur Aplikasi
 
 | Fitur | Keterangan |
@@ -26,6 +42,7 @@
 | 🗑️ **Hapus Mobil** | Konfirmasi dialog sebelum menghapus |
 | 📷 **Upload Foto** | Gambar tersimpan di Supabase Storage (web-compatible) |
 | 🌙 **Dark & Light Mode** | Toggle tema langsung dari halaman utama |
+| 🔔 **Snackbar Notifikasi** | Notifikasi berhasil saat create, update, dan delete |
 | 🔒 **Row Level Security** | Setiap user hanya akses data miliknya |
 | 🌐 **Cross-Platform** | Berjalan di Web, Android, dan iOS |
 
@@ -62,7 +79,7 @@
 
 ### Dialog & Feedback
 - `Dialog` custom — konfirmasi hapus
-- `SnackBar` — notifikasi sukses/error
+- `SnackBar` — notifikasi sukses/error untuk create, update, delete
 - `HapticFeedback` — respons sentuhan
 
 ### State & Stream
@@ -134,7 +151,7 @@ SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_ANON_KEY=your-anon-key-here
 ```
 
-> ⚠️ File `.env` sudah ada di `.gitignore` — **jangan di-commit ke GitHub**. Kirim URL dan API Key lewat komentar pribadi.
+> ⚠️ File `.env` sudah ada di `.gitignore` — **jangan di-commit ke GitHub**.
 
 ### 5. Jalankan Aplikasi
 
@@ -177,15 +194,6 @@ Table: cars
 ```
 
 Row Level Security aktif — setiap user hanya bisa akses data miliknya sendiri.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Persistensi tema (simpan preferensi dark/light)
-- [ ] Halaman detail mobil
-- [ ] Sistem booking & kalender ketersediaan
-- [ ] Export laporan ke PDF
 
 ---
 
