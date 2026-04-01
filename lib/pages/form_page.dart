@@ -291,7 +291,7 @@ class _PhotoPicker extends StatelessWidget {
                   errorBuilder: (_, __, ___) => _EmptyPhoto(),
                 ),
 
-              // Edit overlay (only when has image)
+              // Edit overlay (only when ada imej)
               if (hasImage)
                 Positioned(
                   bottom: 0, left: 0, right: 0,
